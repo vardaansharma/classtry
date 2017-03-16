@@ -22,14 +22,19 @@ try {
      Postcode VARCHAR( 50 ) NOT NULL,
      Country VARCHAR( 50 ) NOT NULL);" ;
      $db->exec($sql);
+	echo "in try";
    
+echo "in between try and catch";
+
 } catch(PDOException $e) {
+	echo "in catch";
     echo $e->getMessage();//Remove or change message in production code
 }
 
+echo "before query";
 $result = $db->exec("INSERT INTO tcompany(Prename, Name) VAULES('John', 'Doe')");
 echo $result;
-
+echo after "query";
 
 
 echo " we";
