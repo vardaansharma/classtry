@@ -9,20 +9,6 @@ $dsn = "pgsql:"
 
 $db = new PDO($dsn) or die();
 
-$table = "tcompany";
-try {
-     $sql ="CREATE table tcompany(
-     ID INT( 11 ) AUTO_INCREMENT PRIMARY KEY,
-     Prename VARCHAR( 50 ) NOT NULL, 
-     );" ;
-     $db->exec($sql);
-	echo "in try";
-   
-
-} catch(PDOException $e) {
-	echo "in catch";
-    echo $e->getMessage();
-}
 
 
 
