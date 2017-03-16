@@ -11,7 +11,7 @@ $db = new PDO($dsn);
 
 $table = "tcompany";
 try {
-     $sql ="CREATE table $table(
+     $sql ="CREATE table tcompany(
      ID INT( 11 ) AUTO_INCREMENT PRIMARY KEY,
      Prename VARCHAR( 50 ) NOT NULL, 
      Name VARCHAR( 250 ) NOT NULL,
@@ -24,11 +24,10 @@ try {
      $db->exec($sql);
 	echo "in try";
    
-echo "in between try and catch";
 
 } catch(PDOException $e) {
 	echo "in catch";
-    echo $e->getMessage();//Remove or change message in production code
+    echo $e->getMessage();
 }
 
 echo "before query";
