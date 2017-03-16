@@ -27,6 +27,11 @@ try {
     echo $e->getMessage();//Remove or change message in production code
 }
 
+$result = $db->exec("INSERT INTO tcompany(Prename, Name) VAULES('John', 'Doe')");
+echo $result
+
+
+
 echo " we";
 
 
