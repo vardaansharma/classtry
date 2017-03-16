@@ -6,7 +6,6 @@ $dsn = "pgsql:"
     . "dbname=d3f5n2850gvvdk;"
     . "user=dguqsrqlvkwikg;"
     . "port=5432;"
-    . "sslmode=require;"
     . "password=0df6d6a666c589ea364a2338859ec8ea352874effba3fdfcf8b1bbe69966ee20";
 
 $db = new PDO($dsn);
