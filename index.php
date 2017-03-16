@@ -28,7 +28,7 @@ try {
 }
 
 $result = $db->exec("INSERT INTO tcompany(Prename, Name) VAULES('John', 'Doe')");
-echo $result
+echo $result;
 
 
 
